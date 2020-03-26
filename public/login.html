@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="./javascript/rain.js"></script>
+    <link rel="icon" type="image/png" href="./img/Logo3.svg">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="login-form">
+        <div class="logo"><img src="./img/Logo3.png" alt="Tobias Roth"></div>
+
+        <div class="login">Login</div>
+
+        <form action="includes/login.inc.php" method="post">
+                <input type="text" name="mailuid" placeholder="Username Or Email">
+                <input type="password" name="pwd" placeholder="Password">
+                <button type="submit" name="login-submit" class="login-btn">Login</button>
+        </form>
+        <a href="signup.php">Sign Up</a>
+
+        <form action="includes/logout.inc.php" method="post">
+                <button type="submit" name="logout-submit">Logout</button>
+        </form>
+
+
+        <div class="privacy-link">
+                <a href="policy.html">Privacy Policy</a>
+            </div>
+    </div>
+</body>
+
+</html>
